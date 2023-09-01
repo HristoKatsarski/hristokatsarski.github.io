@@ -113,43 +113,6 @@
                 transition-duration: 500ms;
             }
 
-            .contact {
-                margin-top: 25px;
-                width: 70%;
-                font-size: 20px; 
-                color: rgb(120, 120, 120);
-                font-family: 'REM'; 
-                margin-bottom: 30px;
-            }
-
-            /* Style inputs with type="text", select elements and textareas */
-            input[type=text], select, textarea {
-                width: 100%; /* Full width */
-                padding: 12px; /* Some padding */ 
-                border: 1px solid #888888; /* Gray border */
-                border-radius: 4px; /* Rounded borders */
-                box-sizing: border-box; /* Make sure that padding and width stays in place */
-                margin-top: 6px; /* Add a top margin */
-                margin-bottom: 16px; /* Bottom margin */
-                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-                background-color: rgb(50, 50, 50);
-            }
-
-            /* Style the submit button with a specific background color etc */
-            input[type=submit] {
-                margin-top: 10px;
-                background-color: #04AA6D;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            /* When moving the mouse over the submit button, add a darker green color */
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
 
             
 
@@ -182,10 +145,10 @@
 
                 <div style="display: inline-block;">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
+                    <li><a style="color: rgb(80, 80, 80); background-color: rgb(30, 30, 30);">News</a></li>
                     <li><a href="library.html">Library</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a style="color: rgb(80, 80, 80); background-color: rgb(30, 30, 30);">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a onclick="show_follow_content()" style="cursor:pointer;">Follow Me</a></li>
                 </div>
             </ul>
@@ -206,32 +169,40 @@
                 </ul>
             </center>
         </div>
-
-        <center>
-            <div class="contact">
-                <form action="action_page.php">
-            
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-            
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            
-                <input type="submit" value="Submit">
-            
-                </form>
+        
+        
+        <div style="font-family: 'REM'; color: rgb(120, 120, 120); background-color: rgb(30, 30, 30);
+        margin-left: 140px;  margin-right: 140px; margin-top: 50px;  margin-bottom: 50px; 
+        padding-top: 50px; padding-bottom: 50px; 
+        border-style: solid ;border-radius: 50px; border-color: rgb(100, 100, 100); border-width: 5px;
+        background: linear-gradient(45deg, rgb(30, 30, 30) 0%, 
+                rgb(30, 30, 30) 5%,transparent 5%, transparent 10%,
+                rgb(30, 30, 30) 10%, rgb(30, 30, 30) 15%,transparent 15%,transparent 20%, 
+                rgb(30, 30, 30) 20%, rgb(30, 30, 30) 25%,transparent 25%,transparent 30%, 
+                rgb(30, 30, 30) 30%, rgb(30, 30, 30) 35%,transparent 35%,transparent 40%, 
+                rgb(30, 30, 30) 40%, rgb(30, 30, 30) 45%, transparent 45%,transparent 50%, 
+                rgb(30, 30, 30) 50%, rgb(30, 30, 30) 55%,transparent 55%, transparent 60%, 
+                rgb(30, 30, 30) 60%, rgb(30, 30, 30) 65%,transparent 65%,transparent 70%, 
+                rgb(30, 30, 30) 70%, rgb(30, 30, 30) 75%,transparent 70%,transparent 80%, 
+                rgb(30, 30, 30) 80%, rgb(30, 30, 30) 85%,transparent 85%,transparent 90%, 
+                rgb(30, 30, 30) 90%, rgb(30, 30, 30) 95%,transparent 95%);
+                background-size: 5em 5em;
+                background-color: rgb(20, 20, 20);">
+            <div style="display: inline-block; vertical-align: middle; padding-left: 60px;">
+                <p>01.09.2023</p>
+                <h1 style="font-size: 30px;">Welcome to my Website!</h1>
+                <br>
+                <p style="font-size: 25px;">
+                    I made a website! Of course I used<br> just plain html and css to create it.<br>
+                    I can make you a website as well.<br> You can see a collection of the websites<br>
+                    that I have made <a href="library.html">here</a>. If you want me<br> to create a website for you you can<br>
+                    <a href="contact.html">contact me</a> or view my Fiverr page.
+                </p>
             </div>
-        </center>
+            <img  src="websites/website_001.png" style="width: 40%; display: inline-block; 
+            vertical-align: middle; margin-left: 60px; box-shadow: 5px 10px 20px black; border: solid 5px black;"/>
+        </div>
+        
 
         <hr style="border: none; border-top: 5px solid rgb(40, 40, 40);">
 

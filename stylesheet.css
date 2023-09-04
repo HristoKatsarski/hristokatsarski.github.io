@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'REM';
+    src: url(static/REM-SemiBold.ttf);
+}
+
+html {
+    background-color: rgb(25, 25, 25);
+}
+
+:root {
+    --menufontcolor: rgb(200, 200, 200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(0, 80, 0);
+}
+
+.navbar {
+    padding-left: 0px;
+    background-color: rgb(30, 30, 30);
+    user-select: none;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar li {
+    display: inline-block;
+    margin-left: -1.9px;
+    margin-right: -1.9px;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--menufontcolor);
+    font-family: 'REM';
+
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+
+    vertical-align: middle;
+}
+.navbar a:hover {
+    background-color: rgb(50, 50, 50);
+
+    transition-property: background-color;
+    transition-duration: 50ms;
+
+}
+
+
+
+.logo {
+    height: 120px;
+    vertical-align: middle;
+}
+
+.website-name {
+    text-decoration: none;
+    font-family: 'REM';
+    font-size: 25px;
+    font-weight: bolder;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    vertical-align: middle;
+    
+    background-image: linear-gradient(to right, rgb(10, 120, 0), rgb(20, 170, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+#sm-platforms {
+    position: fixed;
+    right: -30%;
+    transition-duration: 200ms;
+    background-color: rgb(40, 40, 40);
+
+}
+#sm-platforms ul {
+    list-style: none;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+#sm-platforms li {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#sm-platforms li a {
+    font-size: 25px;
+    color: var(--menufontcolor);
+}
+#sm-platforms.active {
+    right: 0;
+    transition-duration: 200ms;
+}
+#sm-platforms a:hover {
+    color: rgb(120, 120, 120);
+    transition-duration: 500ms;
+}
+
+
+
+.d-about {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+.d-about ul {
+    list-style: none;
+}
+.d-about li {
+    font-family: 'REM'; font-size: 25px; color: rgb(120, 120, 120);
+}
+
+
+
+.websites {
+    
+    background: linear-gradient(45deg, rgb(30, 30, 30) 0%, 
+    rgb(30, 30, 30) 5%,transparent 5%, transparent 10%,
+    rgb(30, 30, 30) 10%, rgb(30, 30, 30) 15%,transparent 15%,transparent 20%, 
+    rgb(30, 30, 30) 20%, rgb(30, 30, 30) 25%,transparent 25%,transparent 30%, 
+    rgb(30, 30, 30) 30%, rgb(30, 30, 30) 35%,transparent 35%,transparent 40%, 
+    rgb(30, 30, 30) 40%, rgb(30, 30, 30) 45%, transparent 45%,transparent 50%, 
+    rgb(30, 30, 30) 50%, rgb(30, 30, 30) 55%,transparent 55%, transparent 60%, 
+    rgb(30, 30, 30) 60%, rgb(30, 30, 30) 65%,transparent 65%,transparent 70%, 
+    rgb(30, 30, 30) 70%, rgb(30, 30, 30) 75%,transparent 70%,transparent 80%, 
+    rgb(30, 30, 30) 80%, rgb(30, 30, 30) 85%,transparent 85%,transparent 90%, 
+    rgb(30, 30, 30) 90%, rgb(30, 30, 30) 95%,transparent 95%);
+    background-size: 4em 4em;
+    background-color: rgb(20, 20, 20);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.websites p {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 25px;
+
+    margin-left: 0px;
+}
+.websites h1 {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 35px;
+}
+
+
+
+.animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.animation p {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 25px;
+
+    margin-left: 0px;
+}
+.animation h1 {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 35px;
+}
+
+
+
+.game-making {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(rgb(10, 25, 10), rgb(0, 35, 10));
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.game-making p {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 25px;
+}
+.game-making h1 {
+    color: rgb(120, 120, 120);
+    font-family: 'REM';
+    font-size: 35px;
+}
+
+
+
+.programs-list {
+    font-family: 'REM'; font-size: 25px; color: rgb(120, 120, 120);
+}
+.programs-list h1 {
+    font-size: 45px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.programs-list img {
+    height: 250px;
+}
+.pdiv {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    background-color: rgba(20,20,20,1);
+    background-image: linear-gradient(to right, rgba(30,30,30,1), rgba(30,30,30,1) 5.5px, rgba(20,20,20,1) 5.5px, rgba(20,20,20,1) );
+    background-size: 11px 100%;
+
+    border: 5px rgb(120, 120, 120) solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+
+
+
+
+#r {
+    font-family: 'REM'; font-size: 30px; color: rgb(120, 120, 120);
+    padding-top: 10; padding-bottom: 10; padding-left: 30; padding-right: 30;
+    background-color: rgb(40, 40, 40);
+    border-radius: 20px;
+}
+#r:hover {
+    background-color: rgb(60, 60, 60);
+    padding-top: 15; padding-bottom: 15; padding-left: 35; padding-right: 35;
+}
+
+
+
+.aboutme {
+    background-image: url(MidNightCity.png); background-size: cover;
+    background-position-y: -250px;
+}
+.aboutsite {
+    background-image: linear-gradient(to top, rgb(25, 25, 25), rgb(0, 35, 10));
+}
+
+
+
+
+.contact {
+    margin-top: 25px;
+    width: 70%;
+    font-size: 20px; 
+    color: rgb(120, 120, 120);
+    font-family: 'REM'; 
+    margin-bottom: 30px;
+}
+.contact input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #888888; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: rgb(50, 50, 50);
+}
+.contact input[type=submit] {
+    margin-top: 10px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+footer ul {
+    list-style: none;
+}
+footer li {
+    font-size: 25px;
+}

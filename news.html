@@ -4,127 +4,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <title>HristoKatsarski</title>
         <link rel="icon" href="icon.png" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-        <style>
-            @font-face {
-                font-family: 'REM';
-                src: url(static/REM-SemiBold.ttf);
-            }
-
-            html {
-                background-color: rgb(25, 25, 25);
-            }
-
-            :root {
-                --menufontcolor: rgb(200, 200, 200);
-            }
-
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            .navbar {
-                padding-left: 0px;
-                background-color: rgb(30, 30, 30);
-                user-select: none;
-            }
-
-            .navbar ul {
-                list-style: none;
-            }
-
-            .navbar li {
-                display: inline-block;
-                margin-left: -1.9px;
-                margin-right: -1.9px;
-            }
-
-            .navbar a {
-                text-decoration: none;
-                color: var(--menufontcolor);
-                font-family: 'REM';
-
-                font-size: 20px;
-                padding-left: 40px;
-                padding-right: 40px;
-                padding-top: 46px;
-                padding-bottom: 46px;
-
-                vertical-align: middle;
-            }
-            
-            .navbar a:hover {
-                background-color: rgb(50, 50, 50);
-
-                transition-property: background-color;
-                transition-duration: 50ms;
-
-            }
-
-            .logo {
-                height: 120px;
-                vertical-align: middle;
-            }
-
-            .website-name {
-                text-decoration: none;
-                color: var(--menufontcolor);
-                font-family: 'REM';
-                font-size: 25px;
-
-                margin-left: 30px;
-                margin-right: 30px;
-
-                vertical-align: middle;
-            }
-
-            #sm-platforms {
-                position: fixed;
-                right: -30%;
-                transition-duration: 200ms;
-                background-color: rgb(40, 40, 40);
-                padding-left: 70px;
-                padding-right: 70px;
-
-            }
-
-            #sm-platforms ul {
-                list-style: none;
-            }
-
-            #sm-platforms li {
-                margin-bottom: 25px;
-                margin-top: 25px;
-            }
-
-            #sm-platforms li a {
-                font-size: 25px;
-                color: var(--menufontcolor);
-            }
-
-            #sm-platforms.active {
-                right: 0;
-                transition-duration: 200ms;
-            }
-
-            #sm-platforms a:hover {
-                color: rgb(120, 120, 120);
-                transition-duration: 500ms;
-            }
-
-
-            
-
-            footer ul {
-                list-style: none;
-            }
-
-            footer li {
-                font-size: 25px;
-            }
-
-        </style>
 
         <script>
             function show_follow_content() {
@@ -156,6 +37,8 @@
         </div>
 
         <div class="follow-sm" id="sm-platforms">
+            <button style="float: right; width: 25px; height: 25px; font-size: 15px; margin: 10px; border: 0px;
+            font-weight: bold; background-color: rgb(120, 120, 120); border-radius: 10px;" onclick="show_follow_content()">X</button>
             <center>
                 <ul style="top: 0%;">
                     <li><a href="https://www.youtube.com/channel/UCsW4KyH504tGAr51Tlw61QA" target="_blank"><i class="fa-brands fa-youtube"> YouTube</i></a></li>
@@ -221,10 +104,10 @@
                 <ul>
                     <li>Projects:</li>
                     <ul>
-                        <li><a href="">Animations:</a></li>
+                        <li><a href="library.html">Animations:</a></li>
                     </ul>
                     <ul>
-                        <li><a href="">Websites:</a></li>
+                        <li><a href="library.html">Websites:</a></li>
                     </ul>
                 </ul>
 
@@ -238,8 +121,8 @@
 
                 <ul>
                     <li>About</li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">About Website</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html">About Website</a></li>
                 </ul>
 
                 <ul>

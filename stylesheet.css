@@ -20,63 +20,58 @@ a {
     color: rgb(0, 80, 0);
 }
 
+.logo {
+    height: 120px;
+}
+
 .navbar {
-    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+
     background-color: rgb(30, 30, 30);
     user-select: none;
 }
-.navbar ul {
-    list-style: none;
-}
-.navbar li {
-    display: inline-block;
-    margin-left: -1.9px;
-    margin-right: -1.9px;
-}
+
 .navbar a {
-    text-decoration: none;
-    color: var(--menufontcolor);
+    height: 120px;
+    width: 150px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
     font-family: 'REM';
+    color: var(--menufontcolor);
 
-    font-size: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 46px;
-    padding-bottom: 46px;
-
-    vertical-align: middle;
+    text-decoration: none;
 }
+
 .navbar a:hover {
     background-color: rgb(50, 50, 50);
-
     transition-property: background-color;
     transition-duration: 50ms;
-
-}
-
-
-
-.logo {
-    height: 120px;
-    vertical-align: middle;
 }
 
 .website-name {
-    text-decoration: none;
-    font-family: 'REM';
-    font-size: 25px;
-    font-weight: bolder;
+text-decoration: none;
+font-family: 'REM';
+font-size: 25px;
+font-weight: bolder;
 
-    margin-left: 30px;
-    margin-right: 30px;
+margin-left: 30px;
+margin-right: 30px;
 
-    vertical-align: middle;
-    
-    background-image: linear-gradient(to right, rgb(10, 120, 0), rgb(20, 170, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+
+background-image: linear-gradient(to right, rgb(10, 120, 0), rgb(20, 170, 0));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
 }
+
 
 
 
@@ -302,7 +297,35 @@ a {
     background-color: #45a049;
 }
 
+.library-websites {
+    padding: 30px;
 
+    font-family: 'REM';
+    text-decoration: underline;
+    color: rgb(120, 120, 120);
+
+    border: 5px solid rgb(120, 120, 120);
+
+    margin: 20px;
+
+    background-color: rgba(20,20,20,1);
+    background-image: linear-gradient(to right, rgba(30,30,30,1), rgba(30,30,30,1) 5.5px, rgba(20,20,20,1) 5.5px, rgba(20,20,20,1) );
+    background-size: 11px 100%;
+}
+
+.library-container div img {
+    height: 180px;
+    border-style: solid;
+    border-color: rgb(120, 120, 120);
+    border-radius: 20px;
+}
+
+.library-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
 
 
 footer ul {
